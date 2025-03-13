@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #fff;
+}
+
+:global(body.dark-mode) .wrapper {
+  background: #333;
+  border-bottom: 1px solid #555;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 1.5rem !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+}
+
+.function {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.darkModeButton {
+  box-shadow: none;
+}

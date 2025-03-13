@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  height: calc(100vh - 71px - 43px);
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    height: calc(100vh - 71px - 43px);
+  }
+}

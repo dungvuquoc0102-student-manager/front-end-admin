@@ -1,0 +1,35 @@
+.wrapper {
+  width: 25%;
+  background-color: #fff;
+  border-right: 1px solid #e0e0e0;
+  height: calc(100vh - 71px - 43px);
+  overflow: auto;
+}
+
+:global(body.dark-mode) .wrapper {
+  background: #333;
+  border-right: 1px solid #555;
+}
+
+.menu {
+  background-color: transparent;
+  border: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  :global(body.dark-mode) .wrapper {
+    border-right: none;
+    border-bottom: 1px solid #555;
+  }
+
+  .menu {
+    display: flex;
+  }
+}
